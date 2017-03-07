@@ -1,9 +1,7 @@
-//*** spoj vodivide VOI 2015 (2015-04-16)
 uses math;
 type int=longint;
 const inf=2100000000;
-var f: text;
-n, i, j, top: int;
+var n, i, j, top: int;
 a, b, c, idx: array[1..5000] of int;
 g: array[0..5000, -1..5000] of int;
 
@@ -16,13 +14,10 @@ begin
 end;
 
 begin
-    assign(f, '');
-    reset(f);
-    readln(f, n);
-    for i:=1 to n do read(f, a[i]);
-    readln(f);
-    for i:=1 to n do read(f, b[i]);
-    close(f);
+    readln(n);
+    for i:=1 to n do read(a[i]);
+    readln;
+    for i:=1 to n do read(b[i]);
     
     for i:=1 to n do idx[i]:=i;
     for j:=1 to n do for i:=1 to n-1 do begin
@@ -66,11 +61,6 @@ begin
             top:=top-1;
         end;
     end;
-    assign(f, '');
-    rewrite(f);
-    writeln(f, g[n, 0]);
-    for i:=1 to n do if b[i]>i then begin
-        writeln(f, i, ' ', b[i]);
-    end;
-    close(f);
+    writeln(g[n, 0]);
+    for i:=1 to n do if b[i]>i then writeln(i, ' ', b[i]);
 end.

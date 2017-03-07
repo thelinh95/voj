@@ -7,3 +7,10 @@
     - 0 pas 100
     - 1 python3 100
     - 2 c++ 100
+- VODIVIDE
+    - 0 pas 100
+    - 1 pas 100
+- QBMST
+    - 0 pas 100
+    - 1 c++ 100
+    - 2 c++ 100
