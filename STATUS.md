@@ -1,5 +1,9 @@
 - ACMNB
     - 0 pas 100
-    - 1 cpp 100
-    - 2 cpp 100
-    - 3 py 70
+    - 1 c++14 100
+    - 2 c++ 100
+    - 3 python3 70
+- BWPOINTS
+    - 0 pas 100
+    - 1 python3 100
+    - 2 c++ 100

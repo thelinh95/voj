@@ -1,4 +1,3 @@
-//*** bwpoints voi 2011
 type int=longint;
 
 var a: array[1..200000] of int;
@@ -47,23 +46,19 @@ begin
 end;
 
 procedure nhap;
-var f: text;
-i: int;
+var i: int;
 begin
-    assign(f, '');
-    reset(f);
-    readln(f, n);
+    readln(n);
     for i:=1 to n do begin
-        read(f, a[i]);
+        read(a[i]);
         b[i]:=0;
     end;
-    readln(f);
+    readln();
     n:=n*2;
     for i:=(n shr 1)+1 to n do begin
-        read(f, a[i]);
+        read(a[i]);
         b[i]:=1;
     end;
-    close(f);
 end;
 
 begin
